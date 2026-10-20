@@ -7,10 +7,14 @@
 
 /* Global styles 
 ------------------------------------*/
+
+/* makes border-box sizing the default for every element on the page 
+    With border-box, the width includes the padding and border */
 html {
 	box-sizing: border-box;
 }
-*, *:before, *:after {
+/* * selects every element on the page. *:before and *:after select the ::before and ::after pseudo-elements, which a plain * doesn’t include. inherit tells each of them to copy the box-sizing value from its parent.*/
+*, *:before, *:after {              
 	box-sizing: inherit;
 }
 
